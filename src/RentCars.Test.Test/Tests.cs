@@ -505,7 +505,7 @@ public class TestReq10
             PropertyInfo cpf = person.GetType().GetProperty("CPF");
             cpf.SetValue(person, "011.787.456-65");
 
-            var daysRented = 10;
+            // var daysRented = 10;
             var expectedPrice = 700.0;
             Rent instance = new Rent(vehicle, person, 10);
             instance.Vehicle.Should().BeEquivalentTo(vehicle);
